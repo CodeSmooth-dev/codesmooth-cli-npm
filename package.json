@@ -1,0 +1,29 @@
+{
+  "name": "codesmooth-cli",
+  "version": "1.0.0",
+  "description": "CodeSmooth CLI for managing Tasks/Challenges within the app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSmooth-dev/codesmooth-cli-npm.git"
+  },
+  "keywords": [
+    "codesmooth",
+    "learn",
+    "programming",
+    "programming",
+    "cli"
+  ],
+  "author": "Artur Kot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSmooth-dev/codesmooth-cli-npm/issues"
+  },
+  "homepage": "https://github.com/CodeSmooth-dev/codesmooth-cli-npm#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
