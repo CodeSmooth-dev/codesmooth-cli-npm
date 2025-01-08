@@ -1,29 +1,30 @@
 {
   "name": "codesmooth-cli",
   "version": "1.0.0",
-  "description": "CodeSmooth CLI for managing Tasks/Challenges within the app.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "CodeSmooth CLI companion app for CodeSmooth.dev platform.",
+  "module": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "codesmooth": "./dist/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodeSmooth-dev/codesmooth-cli-npm.git"
-  },
-  "keywords": [
-    "codesmooth",
-    "learn",
-    "programming",
-    "programming",
-    "cli"
+  "files": [
+    "dist"
   ],
-  "author": "Artur Kot",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CodeSmooth-dev/codesmooth-cli-npm/issues"
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
   },
-  "homepage": "https://github.com/CodeSmooth-dev/codesmooth-cli-npm#readme",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "fastify": "^5.2.1",
+    "keytar": "^7.9.0",
+    "node-fetch": "^3.3.2",
+    "open": "^10.1.0",
+    "uuid": "^11.0.4"
+  },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
   }
 }
